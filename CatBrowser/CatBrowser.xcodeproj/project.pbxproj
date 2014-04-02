@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5E41A66618EC804D00F298D9 /* CatURLProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E41A66518EC804D00F298D9 /* CatURLProtocol.m */; };
+		5E41A66A18EC83CF00F298D9 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E41A66918EC83CF00F298D9 /* MobileCoreServices.framework */; };
 		5E84B98318EC716B00EC3CF2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E84B98218EC716B00EC3CF2 /* Foundation.framework */; };
 		5E84B98518EC716B00EC3CF2 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E84B98418EC716B00EC3CF2 /* CoreGraphics.framework */; };
 		5E84B98718EC716B00EC3CF2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E84B98618EC716B00EC3CF2 /* UIKit.framework */; };
@@ -36,6 +38,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5E41A66418EC804D00F298D9 /* CatURLProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CatURLProtocol.h; sourceTree = "<group>"; };
+		5E41A66518EC804D00F298D9 /* CatURLProtocol.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CatURLProtocol.m; sourceTree = "<group>"; };
+		5E41A66918EC83CF00F298D9 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		5E84B97F18EC716B00EC3CF2 /* CatBrowser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CatBrowser.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E84B98218EC716B00EC3CF2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		5E84B98418EC716B00EC3CF2 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -64,6 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5E41A66A18EC83CF00F298D9 /* MobileCoreServices.framework in Frameworks */,
 				5E84B98518EC716B00EC3CF2 /* CoreGraphics.framework in Frameworks */,
 				5E84B98718EC716B00EC3CF2 /* UIKit.framework in Frameworks */,
 				5E84B98318EC716B00EC3CF2 /* Foundation.framework in Frameworks */,
@@ -105,6 +111,7 @@
 		5E84B98118EC716B00EC3CF2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				5E41A66918EC83CF00F298D9 /* MobileCoreServices.framework */,
 				5E84B98218EC716B00EC3CF2 /* Foundation.framework */,
 				5E84B98418EC716B00EC3CF2 /* CoreGraphics.framework */,
 				5E84B98618EC716B00EC3CF2 /* UIKit.framework */,
@@ -122,6 +129,8 @@
 				5E84B99718EC716B00EC3CF2 /* Main_iPad.storyboard */,
 				5E84B99A18EC716B00EC3CF2 /* CatBrowserViewController.h */,
 				5E84B99B18EC716B00EC3CF2 /* CatBrowserViewController.m */,
+				5E41A66418EC804D00F298D9 /* CatURLProtocol.h */,
+				5E41A66518EC804D00F298D9 /* CatURLProtocol.m */,
 				5E84B99D18EC716B00EC3CF2 /* Images.xcassets */,
 				5E84B98918EC716B00EC3CF2 /* Supporting Files */,
 			);
@@ -257,6 +266,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5E41A66618EC804D00F298D9 /* CatURLProtocol.m in Sources */,
 				5E84B99C18EC716B00EC3CF2 /* CatBrowserViewController.m in Sources */,
 				5E84B99318EC716B00EC3CF2 /* AppDelegate.m in Sources */,
 				5E84B98F18EC716B00EC3CF2 /* main.m in Sources */,
@@ -474,6 +484,7 @@
 				5E84B9B618EC716B00EC3CF2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5E84B9B718EC716B00EC3CF2 /* Build configuration list for PBXNativeTarget "CatBrowserTests" */ = {
 			isa = XCConfigurationList;
@@ -482,6 +493,7 @@
 				5E84B9B918EC716B00EC3CF2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

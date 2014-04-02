@@ -9,5 +9,15 @@
 #import <UIKit/UIKit.h>
 
 @interface CatBrowserViewController : UIViewController
+@property (weak, nonatomic) IBOutlet UIWebView *webView;
+@property (weak, nonatomic) IBOutlet UIBarButtonItem *rewind;
+@property (weak, nonatomic) IBOutlet UIBarButtonItem *stop;
+@property (weak, nonatomic) IBOutlet UIBarButtonItem *refresh;
+@property (weak, nonatomic) IBOutlet UIBarButtonItem *forward;
+@property (weak, nonatomic) IBOutlet UIBarButtonItem *cat;
+
+
+- (void)loadRequestFromString:(NSString*)urlString;
+
 
 @end

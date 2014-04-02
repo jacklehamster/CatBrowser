@@ -25,17 +25,41 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <toolbarItems>
-                        <barButtonItem systemItem="rewind" id="SoH-ea-TL6"/>
+                        <barButtonItem systemItem="rewind" id="SoH-ea-TL6">
+                            <connections>
+                                <action selector="goBack" destination="XwE-E0-hyZ" id="jvA-iV-eXH"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem style="plain" systemItem="flexibleSpace" id="DPY-r9-ovq"/>
-                        <barButtonItem systemItem="stop" id="w1H-fD-Lhp"/>
+                        <barButtonItem systemItem="stop" id="w1H-fD-Lhp">
+                            <connections>
+                                <action selector="stopLoading" destination="XwE-E0-hyZ" id="kjC-5r-1Hl"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem style="plain" systemItem="flexibleSpace" id="jf7-EY-feb"/>
-                        <barButtonItem systemItem="refresh" id="yMN-yF-dQI"/>
+                        <barButtonItem systemItem="refresh" id="yMN-yF-dQI">
+                            <connections>
+                                <action selector="reload" destination="XwE-E0-hyZ" id="ina-tU-L2f"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem style="plain" systemItem="flexibleSpace" id="H4n-90-Car"/>
-                        <barButtonItem systemItem="fastForward" id="KV4-IC-pCS"/>
+                        <barButtonItem systemItem="fastForward" id="KV4-IC-pCS">
+                            <connections>
+                                <action selector="goForward" destination="XwE-E0-hyZ" id="LqD-qr-n2m"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem style="plain" systemItem="flexibleSpace" id="Ekg-9K-CU6"/>
                         <barButtonItem image="liftarn_Cat_silhouette.png" style="done" id="0Pg-Gf-Xbf"/>
                     </toolbarItems>
                     <navigationItem key="navigationItem" id="ffy-B9-uha"/>
+                    <connections>
+                        <outlet property="cat" destination="0Pg-Gf-Xbf" id="tvk-ir-7s7"/>
+                        <outlet property="forward" destination="KV4-IC-pCS" id="sXH-ZS-ekK"/>
+                        <outlet property="refresh" destination="yMN-yF-dQI" id="oF3-h5-ZP7"/>
+                        <outlet property="rewind" destination="SoH-ea-TL6" id="q0a-kr-BaV"/>
+                        <outlet property="stop" destination="w1H-fD-Lhp" id="O9O-0r-k9e"/>
+                        <outlet property="webView" destination="XwE-E0-hyZ" id="16x-d4-td8"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

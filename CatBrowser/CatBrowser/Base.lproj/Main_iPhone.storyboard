@@ -25,17 +25,41 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <toolbarItems>
-                        <barButtonItem title="Item" systemItem="rewind" id="obl-ZD-8eo"/>
+                        <barButtonItem title="Item" systemItem="rewind" id="obl-ZD-8eo">
+                            <connections>
+                                <action selector="goBack" destination="6vn-P8-HZd" id="jfe-N1-Sll"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem style="plain" systemItem="flexibleSpace" id="LWB-rd-pKE"/>
-                        <barButtonItem systemItem="stop" id="iho-Nk-iHv"/>
+                        <barButtonItem systemItem="stop" id="iho-Nk-iHv">
+                            <connections>
+                                <action selector="stopLoading" destination="6vn-P8-HZd" id="3OC-o3-kLm"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem style="plain" systemItem="flexibleSpace" id="RCe-1F-b8R"/>
-                        <barButtonItem systemItem="refresh" id="dTO-cL-kGF"/>
+                        <barButtonItem systemItem="refresh" id="dTO-cL-kGF">
+                            <connections>
+                                <action selector="reload" destination="6vn-P8-HZd" id="7WC-iM-0LF"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem style="plain" systemItem="flexibleSpace" id="HEQ-Kh-Y4E"/>
-                        <barButtonItem systemItem="fastForward" id="yZX-62-FGK"/>
+                        <barButtonItem systemItem="fastForward" id="yZX-62-FGK">
+                            <connections>
+                                <action selector="goForward" destination="6vn-P8-HZd" id="T4o-kr-yeS"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem style="plain" systemItem="flexibleSpace" id="XEX-a5-KMP"/>
                         <barButtonItem image="liftarn_Cat_silhouette.png" style="done" id="GHs-c2-mW6"/>
                     </toolbarItems>
                     <navigationItem key="navigationItem" id="rfg-1n-gMw"/>
+                    <connections>
+                        <outlet property="cat" destination="GHs-c2-mW6" id="5x2-Bo-HA7"/>
+                        <outlet property="forward" destination="yZX-62-FGK" id="cdJ-kd-kXi"/>
+                        <outlet property="refresh" destination="dTO-cL-kGF" id="tER-jW-y4q"/>
+                        <outlet property="rewind" destination="obl-ZD-8eo" id="Me2-mp-ove"/>
+                        <outlet property="stop" destination="iho-Nk-iHv" id="8XW-Xs-MLu"/>
+                        <outlet property="webView" destination="6vn-P8-HZd" id="vQM-t8-Hy9"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
