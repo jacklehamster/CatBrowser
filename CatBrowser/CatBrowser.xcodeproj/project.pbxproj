@@ -8,13 +8,21 @@
 
 /* Begin PBXBuildFile section */
 		5E41A66618EC804D00F298D9 /* CatURLProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E41A66518EC804D00F298D9 /* CatURLProtocol.m */; };
-		5E41A66A18EC83CF00F298D9 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E41A66918EC83CF00F298D9 /* MobileCoreServices.framework */; };
+		5E41A68018EF1F9600F298D9 /* silhouette.png in Resources */ = {isa = PBXBuildFile; fileRef = 5E41A67F18EF1F9600F298D9 /* silhouette.png */; };
+		5E41A68418EF75BC00F298D9 /* home.png in Resources */ = {isa = PBXBuildFile; fileRef = 5E41A68318EF75BC00F298D9 /* home.png */; };
+		5E41A68718EFBB7500F298D9 /* BookmarkCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E41A68618EFBB7500F298D9 /* BookmarkCollectionViewController.m */; };
+		5E41A68918F00CF800F298D9 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E41A68818F00CF800F298D9 /* QuartzCore.framework */; };
+		5E41A69518F0963500F298D9 /* star.png in Resources */ = {isa = PBXBuildFile; fileRef = 5E41A69418F0963500F298D9 /* star.png */; };
+		5E41A69B18F09D8700F298D9 /* BookmarkCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E41A69A18F09D8700F298D9 /* BookmarkCollectionViewCell.m */; };
+		5E41A69E18F0ADFC00F298D9 /* NSString+MD5.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E41A69D18F0ADFC00F298D9 /* NSString+MD5.m */; };
+		5E41A6A218F0B85A00F298D9 /* blankstar.png in Resources */ = {isa = PBXBuildFile; fileRef = 5E41A6A118F0B85A00F298D9 /* blankstar.png */; };
+		5E41A6A818F0D7A900F298D9 /* yawning_cat.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5E41A6A718F0D7A900F298D9 /* yawning_cat.jpg */; };
 		5E84B98318EC716B00EC3CF2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E84B98218EC716B00EC3CF2 /* Foundation.framework */; };
 		5E84B98518EC716B00EC3CF2 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E84B98418EC716B00EC3CF2 /* CoreGraphics.framework */; };
 		5E84B98718EC716B00EC3CF2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E84B98618EC716B00EC3CF2 /* UIKit.framework */; };
 		5E84B98D18EC716B00EC3CF2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5E84B98B18EC716B00EC3CF2 /* InfoPlist.strings */; };
 		5E84B98F18EC716B00EC3CF2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E84B98E18EC716B00EC3CF2 /* main.m */; };
-		5E84B99318EC716B00EC3CF2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E84B99218EC716B00EC3CF2 /* AppDelegate.m */; };
+		5E84B99318EC716B00EC3CF2 /* CatAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E84B99218EC716B00EC3CF2 /* CatAppDelegate.m */; };
 		5E84B99618EC716B00EC3CF2 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E84B99418EC716B00EC3CF2 /* Main_iPhone.storyboard */; };
 		5E84B99918EC716B00EC3CF2 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E84B99718EC716B00EC3CF2 /* Main_iPad.storyboard */; };
 		5E84B99C18EC716B00EC3CF2 /* CatBrowserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E84B99B18EC716B00EC3CF2 /* CatBrowserViewController.m */; };
@@ -41,6 +49,23 @@
 		5E41A66418EC804D00F298D9 /* CatURLProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CatURLProtocol.h; sourceTree = "<group>"; };
 		5E41A66518EC804D00F298D9 /* CatURLProtocol.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CatURLProtocol.m; sourceTree = "<group>"; };
 		5E41A66918EC83CF00F298D9 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		5E41A67F18EF1F9600F298D9 /* silhouette.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = silhouette.png; sourceTree = "<group>"; };
+		5E41A68318EF75BC00F298D9 /* home.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = home.png; sourceTree = "<group>"; };
+		5E41A68518EFBB7500F298D9 /* BookmarkCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookmarkCollectionViewController.h; sourceTree = "<group>"; };
+		5E41A68618EFBB7500F298D9 /* BookmarkCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookmarkCollectionViewController.m; sourceTree = "<group>"; };
+		5E41A68818F00CF800F298D9 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		5E41A69018F0879500F298D9 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		5E41A69418F0963500F298D9 /* star.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = star.png; path = ../../../../Downloads/star.png; sourceTree = "<group>"; };
+		5E41A69918F09D8700F298D9 /* BookmarkCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookmarkCollectionViewCell.h; sourceTree = "<group>"; };
+		5E41A69A18F09D8700F298D9 /* BookmarkCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookmarkCollectionViewCell.m; sourceTree = "<group>"; };
+		5E41A69C18F0ADFC00F298D9 /* NSString+MD5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+MD5.h"; sourceTree = "<group>"; };
+		5E41A69D18F0ADFC00F298D9 /* NSString+MD5.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+MD5.m"; sourceTree = "<group>"; };
+		5E41A69F18F0AE2500F298D9 /* libcommonCrypto.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libcommonCrypto.dylib; path = usr/lib/system/libcommonCrypto.dylib; sourceTree = SDKROOT; };
+		5E41A6A118F0B85A00F298D9 /* blankstar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blankstar.png; sourceTree = "<group>"; };
+		5E41A6A318F0BC3300F298D9 /* BookmarkCollectionViewCellDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookmarkCollectionViewCellDelegate.h; sourceTree = "<group>"; };
+		5E41A6A418F0BE1000F298D9 /* BookmarkCollectionViewControllerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookmarkCollectionViewControllerDelegate.h; sourceTree = "<group>"; };
+		5E41A6A518F0CF5000F298D9 /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		5E41A6A718F0D7A900F298D9 /* yawning_cat.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = yawning_cat.jpg; sourceTree = "<group>"; };
 		5E84B97F18EC716B00EC3CF2 /* CatBrowser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CatBrowser.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E84B98218EC716B00EC3CF2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		5E84B98418EC716B00EC3CF2 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -49,8 +74,8 @@
 		5E84B98C18EC716B00EC3CF2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		5E84B98E18EC716B00EC3CF2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		5E84B99018EC716B00EC3CF2 /* CatBrowser-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CatBrowser-Prefix.pch"; sourceTree = "<group>"; };
-		5E84B99118EC716B00EC3CF2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		5E84B99218EC716B00EC3CF2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		5E84B99118EC716B00EC3CF2 /* CatAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CatAppDelegate.h; sourceTree = "<group>"; };
+		5E84B99218EC716B00EC3CF2 /* CatAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CatAppDelegate.m; sourceTree = "<group>"; };
 		5E84B99518EC716B00EC3CF2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
 		5E84B99818EC716B00EC3CF2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
 		5E84B99A18EC716B00EC3CF2 /* CatBrowserViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CatBrowserViewController.h; sourceTree = "<group>"; };
@@ -69,7 +94,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5E41A66A18EC83CF00F298D9 /* MobileCoreServices.framework in Frameworks */,
+				5E41A68918F00CF800F298D9 /* QuartzCore.framework in Frameworks */,
 				5E84B98518EC716B00EC3CF2 /* CoreGraphics.framework in Frameworks */,
 				5E84B98718EC716B00EC3CF2 /* UIKit.framework in Frameworks */,
 				5E84B98318EC716B00EC3CF2 /* Foundation.framework in Frameworks */,
@@ -111,6 +136,10 @@
 		5E84B98118EC716B00EC3CF2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				5E41A6A518F0CF5000F298D9 /* JavaScriptCore.framework */,
+				5E41A69F18F0AE2500F298D9 /* libcommonCrypto.dylib */,
+				5E41A69018F0879500F298D9 /* CoreData.framework */,
+				5E41A68818F00CF800F298D9 /* QuartzCore.framework */,
 				5E41A66918EC83CF00F298D9 /* MobileCoreServices.framework */,
 				5E84B98218EC716B00EC3CF2 /* Foundation.framework */,
 				5E84B98418EC716B00EC3CF2 /* CoreGraphics.framework */,
@@ -123,14 +152,22 @@
 		5E84B98818EC716B00EC3CF2 /* CatBrowser */ = {
 			isa = PBXGroup;
 			children = (
-				5E84B99118EC716B00EC3CF2 /* AppDelegate.h */,
-				5E84B99218EC716B00EC3CF2 /* AppDelegate.m */,
+				5E84B99118EC716B00EC3CF2 /* CatAppDelegate.h */,
+				5E84B99218EC716B00EC3CF2 /* CatAppDelegate.m */,
 				5E84B99418EC716B00EC3CF2 /* Main_iPhone.storyboard */,
 				5E84B99718EC716B00EC3CF2 /* Main_iPad.storyboard */,
 				5E84B99A18EC716B00EC3CF2 /* CatBrowserViewController.h */,
 				5E84B99B18EC716B00EC3CF2 /* CatBrowserViewController.m */,
 				5E41A66418EC804D00F298D9 /* CatURLProtocol.h */,
 				5E41A66518EC804D00F298D9 /* CatURLProtocol.m */,
+				5E41A68518EFBB7500F298D9 /* BookmarkCollectionViewController.h */,
+				5E41A68618EFBB7500F298D9 /* BookmarkCollectionViewController.m */,
+				5E41A6A418F0BE1000F298D9 /* BookmarkCollectionViewControllerDelegate.h */,
+				5E41A69918F09D8700F298D9 /* BookmarkCollectionViewCell.h */,
+				5E41A69A18F09D8700F298D9 /* BookmarkCollectionViewCell.m */,
+				5E41A6A318F0BC3300F298D9 /* BookmarkCollectionViewCellDelegate.h */,
+				5E41A69C18F0ADFC00F298D9 /* NSString+MD5.h */,
+				5E41A69D18F0ADFC00F298D9 /* NSString+MD5.m */,
 				5E84B99D18EC716B00EC3CF2 /* Images.xcassets */,
 				5E84B98918EC716B00EC3CF2 /* Supporting Files */,
 			);
@@ -140,6 +177,11 @@
 		5E84B98918EC716B00EC3CF2 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				5E41A6A718F0D7A900F298D9 /* yawning_cat.jpg */,
+				5E41A6A118F0B85A00F298D9 /* blankstar.png */,
+				5E41A69418F0963500F298D9 /* star.png */,
+				5E41A68318EF75BC00F298D9 /* home.png */,
+				5E41A67F18EF1F9600F298D9 /* silhouette.png */,
 				5E84B9BE18EC7AE900EC3CF2 /* liftarn_Cat_silhouette.png */,
 				5E84B98A18EC716B00EC3CF2 /* CatBrowser-Info.plist */,
 				5E84B98B18EC716B00EC3CF2 /* InfoPlist.strings */,
@@ -244,8 +286,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				5E84B99918EC716B00EC3CF2 /* Main_iPad.storyboard in Resources */,
+				5E41A68018EF1F9600F298D9 /* silhouette.png in Resources */,
+				5E41A6A818F0D7A900F298D9 /* yawning_cat.jpg in Resources */,
+				5E41A69518F0963500F298D9 /* star.png in Resources */,
+				5E41A68418EF75BC00F298D9 /* home.png in Resources */,
 				5E84B9BF18EC7AE900EC3CF2 /* liftarn_Cat_silhouette.png in Resources */,
 				5E84B99E18EC716B00EC3CF2 /* Images.xcassets in Resources */,
+				5E41A6A218F0B85A00F298D9 /* blankstar.png in Resources */,
 				5E84B99618EC716B00EC3CF2 /* Main_iPhone.storyboard in Resources */,
 				5E84B98D18EC716B00EC3CF2 /* InfoPlist.strings in Resources */,
 			);
@@ -266,10 +313,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5E41A69B18F09D8700F298D9 /* BookmarkCollectionViewCell.m in Sources */,
 				5E41A66618EC804D00F298D9 /* CatURLProtocol.m in Sources */,
 				5E84B99C18EC716B00EC3CF2 /* CatBrowserViewController.m in Sources */,
-				5E84B99318EC716B00EC3CF2 /* AppDelegate.m in Sources */,
+				5E84B99318EC716B00EC3CF2 /* CatAppDelegate.m in Sources */,
 				5E84B98F18EC716B00EC3CF2 /* main.m in Sources */,
+				5E41A68718EFBB7500F298D9 /* BookmarkCollectionViewController.m in Sources */,
+				5E41A69E18F0ADFC00F298D9 /* NSString+MD5.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -407,6 +457,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CatBrowser/CatBrowser-Prefix.pch";
 				INFOPLIST_FILE = "CatBrowser/CatBrowser-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SDKROOT)/usr/lib/system",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -420,6 +474,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CatBrowser/CatBrowser-Prefix.pch";
 				INFOPLIST_FILE = "CatBrowser/CatBrowser-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SDKROOT)/usr/lib/system",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};

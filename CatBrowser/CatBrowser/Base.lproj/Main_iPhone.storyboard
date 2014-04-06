@@ -4,6 +4,79 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
     <scenes>
+        <!--Bookmark Collection View Controller-->
+        <scene sceneID="iAT-dR-lwZ">
+            <objects>
+                <collectionViewController autoresizesArchivedViewToFullSize="NO" id="mTD-I9-hRA" customClass="BookmarkCollectionViewController" sceneMemberID="viewController">
+                    <collectionView key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" minimumZoomScale="0.0" maximumZoomScale="0.0" dataMode="prototypes" id="Dja-sY-9Wq">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="5sG-6N-Adp">
+                            <size key="itemSize" width="150" height="150"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Cell" id="PR5-aF-ia3" customClass="BookmarkCollectionViewCell">
+                                <rect key="frame" x="0.0" y="64" width="150" height="150"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c3L-ny-ZgL">
+                                            <rect key="frame" x="15" y="46" width="120" height="92"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <state key="normal" title="Button">
+                                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                            </state>
+                                            <connections>
+                                                <action selector="clickCell" destination="PR5-aF-ia3" eventType="touchUpInside" id="Dou-qI-IIm"/>
+                                            </connections>
+                                        </button>
+                                        <activityIndicatorView opaque="NO" tag="101" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" animating="YES" style="white" translatesAutoresizingMaskIntoConstraints="NO" id="X8j-He-GbW">
+                                            <rect key="frame" x="65" y="82" width="20" height="20"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        </activityIndicatorView>
+                                        <imageView userInteractionEnabled="NO" tag="102" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="star.png" translatesAutoresizingMaskIntoConstraints="NO" id="bwu-Rp-qQu">
+                                            <rect key="frame" x="5" y="6" width="25" height="25"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        </imageView>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="103" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bUI-Y9-zCc">
+                                            <rect key="frame" x="38" y="8" width="104" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="blankstar.png" translatesAutoresizingMaskIntoConstraints="NO" id="js1-Vw-LZj">
+                                            <rect key="frame" x="5" y="6" width="25" height="25"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        </imageView>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                                <color key="backgroundColor" red="0.41960784309999999" green="0.41960784309999999" blue="0.41960784309999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <outlet property="blackStar" destination="js1-Vw-LZj" id="lTc-e4-wcv"/>
+                                    <outlet property="imageView" destination="c3L-ny-ZgL" id="ki0-sY-zXD"/>
+                                    <outlet property="label" destination="bUI-Y9-zCc" id="0FS-jv-Vz0"/>
+                                    <outlet property="loadIndicator" destination="X8j-He-GbW" id="Dhw-NN-CZo"/>
+                                    <outlet property="star" destination="bwu-Rp-qQu" id="JI9-xN-6wh"/>
+                                </connections>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="mTD-I9-hRA" id="GFc-lc-W6i"/>
+                            <outlet property="delegate" destination="mTD-I9-hRA" id="aXw-bN-PJD"/>
+                        </connections>
+                    </collectionView>
+                    <navigationItem key="navigationItem" id="pKr-Qp-Naf"/>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9Pt-mZ-z6g" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1153" y="72"/>
+        </scene>
         <!--Cat Browser View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
@@ -25,7 +98,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <toolbarItems>
-                        <barButtonItem title="Item" systemItem="rewind" id="obl-ZD-8eo">
+                        <barButtonItem systemItem="rewind" id="obl-ZD-8eo">
                             <connections>
                                 <action selector="goBack" destination="6vn-P8-HZd" id="jfe-N1-Sll"/>
                             </connections>
@@ -49,9 +122,24 @@
                             </connections>
                         </barButtonItem>
                         <barButtonItem style="plain" systemItem="flexibleSpace" id="XEX-a5-KMP"/>
-                        <barButtonItem image="liftarn_Cat_silhouette.png" style="done" id="GHs-c2-mW6"/>
+                        <barButtonItem image="liftarn_Cat_silhouette.png" style="done" id="GHs-c2-mW6">
+                            <connections>
+                                <action selector="clickCat:" destination="vXZ-lx-hvc" id="PdG-Cb-Eev"/>
+                            </connections>
+                        </barButtonItem>
                     </toolbarItems>
-                    <navigationItem key="navigationItem" id="rfg-1n-gMw"/>
+                    <navigationItem key="navigationItem" id="rfg-1n-gMw">
+                        <barButtonItem key="leftBarButtonItem" image="home.png" id="RpA-0L-v0T">
+                            <connections>
+                                <action selector="goHome:" destination="vXZ-lx-hvc" id="zWu-Fr-dmT"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="bookmarks" id="ks1-XC-L3g">
+                            <connections>
+                                <segue destination="mTD-I9-hRA" kind="push" identifier="bookmark" id="IPg-AG-byb"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="cat" destination="GHs-c2-mW6" id="5x2-Bo-HA7"/>
                         <outlet property="forward" destination="yZX-62-FGK" id="cdJ-kd-kXi"/>
@@ -89,7 +177,10 @@
         </scene>
     </scenes>
     <resources>
+        <image name="blankstar.png" width="40" height="38"/>
+        <image name="home.png" width="36" height="36"/>
         <image name="liftarn_Cat_silhouette.png" width="64" height="64"/>
+        <image name="star.png" width="40" height="38"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>

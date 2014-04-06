@@ -6,9 +6,9 @@
 //  Copyright (c) 2014 Dobuki Studio. All rights reserved.
 //
 
-#import "AppDelegate.h"
+#import "CatAppDelegate.h"
 
-@implementation AppDelegate
+@implementation CatAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {

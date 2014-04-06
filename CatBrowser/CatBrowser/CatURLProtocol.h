@@ -9,5 +9,9 @@
 #import <Foundation/Foundation.h>
 
 @interface CatURLProtocol : NSURLProtocol
++ (void) register;
+
++ (BOOL) cat;
++ (void) setCat:(BOOL)val;
 
 @end
