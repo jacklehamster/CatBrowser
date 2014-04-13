@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5E3C90C418F65C090097D9A2 /* PlayerIOClient.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E3C90C318F65C090097D9A2 /* PlayerIOClient.framework */; };
 		5E41A66618EC804D00F298D9 /* CatURLProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E41A66518EC804D00F298D9 /* CatURLProtocol.m */; };
 		5E41A68018EF1F9600F298D9 /* silhouette.png in Resources */ = {isa = PBXBuildFile; fileRef = 5E41A67F18EF1F9600F298D9 /* silhouette.png */; };
 		5E41A68418EF75BC00F298D9 /* home.png in Resources */ = {isa = PBXBuildFile; fileRef = 5E41A68318EF75BC00F298D9 /* home.png */; };
@@ -47,7 +46,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		5E3C90C318F65C090097D9A2 /* PlayerIOClient.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = PlayerIOClient.framework; sourceTree = "<group>"; };
 		5E41A66418EC804D00F298D9 /* CatURLProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CatURLProtocol.h; sourceTree = "<group>"; };
 		5E41A66518EC804D00F298D9 /* CatURLProtocol.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CatURLProtocol.m; sourceTree = "<group>"; };
 		5E41A66918EC83CF00F298D9 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
@@ -96,7 +94,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5E3C90C418F65C090097D9A2 /* PlayerIOClient.framework in Frameworks */,
 				5E41A68918F00CF800F298D9 /* QuartzCore.framework in Frameworks */,
 				5E84B98518EC716B00EC3CF2 /* CoreGraphics.framework in Frameworks */,
 				5E84B98718EC716B00EC3CF2 /* UIKit.framework in Frameworks */,
@@ -139,7 +136,6 @@
 		5E84B98118EC716B00EC3CF2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				5E3C90C318F65C090097D9A2 /* PlayerIOClient.framework */,
 				5E41A6A518F0CF5000F298D9 /* JavaScriptCore.framework */,
 				5E41A69F18F0AE2500F298D9 /* libcommonCrypto.dylib */,
 				5E41A69018F0879500F298D9 /* CoreData.framework */,
