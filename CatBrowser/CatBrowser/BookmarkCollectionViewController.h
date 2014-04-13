@@ -12,7 +12,7 @@
 @interface BookmarkCollectionViewController : UICollectionViewController
 
 @property (nonatomic) UIImage* snapShot;
-@property NSString* title;
+@property NSString* pageTitle;
 @property NSString* location;
 @property id<BookmarkCollectionViewControllerDelegate>delegate;
 @end

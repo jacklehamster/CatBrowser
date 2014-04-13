@@ -50,7 +50,7 @@
     
     if(!selfEntry) {
         selfEntry =@{
-                     @"title":[self title],
+                     @"title":[self pageTitle],
                      @"location":[self location],
                      @"not-favorite":@YES
                      };

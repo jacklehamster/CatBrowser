@@ -210,7 +210,7 @@ static NSString* HOME = @"https://www.google.com";
         [[self addressField] setHidden:YES];
         BookmarkCollectionViewController* bookmarkViewController = segue.destinationViewController;
         [bookmarkViewController setLocation:[_webView stringByEvaluatingJavaScriptFromString:@"location.href"]];
-        [bookmarkViewController setTitle:[_webView stringByEvaluatingJavaScriptFromString:@"document.title"]];
+        [bookmarkViewController setPageTitle:[_webView stringByEvaluatingJavaScriptFromString:@"document.title"]];
         [bookmarkViewController setDelegate:self];
         bookmarkRefresh = [NSTimer scheduledTimerWithTimeInterval:.5 target:self selector:@selector(updateBookmarkTimer:) userInfo:bookmarkViewController repeats:YES];
         [self updateBookmark:bookmarkViewController];
